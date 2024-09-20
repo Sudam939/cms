@@ -28,6 +28,8 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->profile()
             ->login()
+            ->globalSearch()
+            ->globalSearchKeyBindings(['command+k', 'ctrl+k'])
             ->brandLogo(fn () => view('logo'))
             ->sidebarCollapsibleOnDesktop()
             ->colors([

@@ -23,6 +23,9 @@ class CourseResource extends Resource
     protected static ?int $navigationSort = 2;
     protected static ?string $navigationGroup = "Courses";
 
+    protected static ?string $recordTitleAttribute = 'name';
+
+
 
     public static function form(Form $form): Form
     {
